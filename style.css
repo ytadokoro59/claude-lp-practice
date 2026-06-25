@@ -145,7 +145,7 @@ ul { list-style: none; }
    PC:     左グラデーション強め・コンテンツ左寄せ
 ============================== */
 
-/* --- 共通ベース --- */
+/* --- 共通ベース（スマホ優先） --- */
 .hero {
   position: relative;
   min-height: 100svh;
@@ -154,10 +154,7 @@ ul { list-style: none; }
   justify-content: flex-end; /* コンテンツを下部に寄せる */
   padding-top: 60px;         /* fixed header 分 */
   overflow: hidden;
-  /* 背景画像（スマホ・PC 共通） */
-  background-image: url("images/instructor-hero.jpg");
-  background-size: cover;
-  /* スマホ用縦長トリミング画像に切り替え */
+  /* スマホ用縦長画像 */
   background-image: url("images/instructor-hero-sp.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -226,8 +223,11 @@ ul { list-style: none; }
 @media (min-width: 680px) {
   .hero {
     justify-content: center;
-    background-size: cover;           /* スマホの 130% を cover に戻す */
-    background-position: 58% center;  /* 顔が見切れないよう中央寄りに調整（PC用） */
+    /* PC用横長画像に切り替え */
+    background-image: url("images/instructor-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 58% center;  /* 顔が見切れないよう中央寄りに調整 */
     padding-top: 0;                   /* PC では header 分のオフセット不要 */
   }
   /* PC 用オーバーレイ：左濃→右薄（横グラデーションに上書き） */
