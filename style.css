@@ -775,6 +775,50 @@ details[open] .other-courses__summary::before { content: '−'; }
 .form-checkbox { display: flex; align-items: flex-start; gap: 8px; cursor: pointer; }
 .form-checkbox input { accent-color: var(--color-primary); width: 16px; height: 16px; cursor: pointer; margin-top: 2px; flex-shrink: 0; }
 .form-checkbox span { font-size: 14px; color: var(--color-text); line-height: 1.5; }
+/* Date input */
+.form-input--date {
+  cursor: pointer;
+  color: var(--color-text);
+}
+.form-input--date::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+/* Time slot checkboxes */
+.form-time-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.form-time-checkbox {
+  display: flex; align-items: center; gap: 8px;
+  cursor: pointer;
+  background: #fff;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  transition: border-color var(--transition), background var(--transition);
+}
+.form-time-checkbox:hover {
+  border-color: var(--color-primary);
+}
+.form-time-checkbox input {
+  accent-color: var(--color-primary);
+  width: 18px; height: 18px;
+  cursor: pointer; flex-shrink: 0;
+}
+.form-time-checkbox input:checked + span {
+  color: var(--color-accent);
+  font-weight: 700;
+}
+.form-time-checkbox span {
+  font-size: 13px; color: var(--color-text);
+}
+@media (max-width: 400px) {
+  .form-time-group { grid-template-columns: 1fr; }
+}
+
 .form-submit { margin-top: 8px; display: flex; flex-direction: column; align-items: center; gap: 12px; }
 .form-note { font-size: 12px; color: var(--color-text-light); text-align: center; line-height: 1.6; }
 
