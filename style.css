@@ -31,7 +31,8 @@ body {
   font-family: var(--font-base);
   color: var(--color-text);
   background: var(--color-bg);
-  line-height: 1.75;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
   -webkit-font-smoothing: antialiased;
   padding-bottom: 70px;
 }
@@ -58,13 +59,13 @@ ul { list-style: none; }
   padding: 4px 12px; border-radius: 20px; margin-bottom: 12px;
 }
 .section-title {
-  font-size: clamp(22px, 6vw, 30px);
+  font-size: clamp(24px, 6vw, 36px);
   font-weight: 700; color: var(--color-accent);
-  line-height: 1.4; margin-bottom: 16px;
+  line-height: 1.35; margin-bottom: 16px;
 }
 .section-title span { color: var(--color-primary-dark); }
 .section-lead {
-  font-size: 14px; color: var(--color-text-light);
+  font-size: 15px; color: var(--color-text-light);
   margin-bottom: 32px; line-height: 1.8;
 }
 
@@ -186,20 +187,24 @@ ul { list-style: none; }
   text-shadow: 0 1px 6px rgba(0,0,0,0.3);
 }
 
-/* 無料体験バッジ */
-.hero__trial-badge {
-  display: inline-flex; align-items: center; gap: 8px;
-  background: var(--color-cta);
-  border-radius: 6px;
-  padding: 8px 14px;
+/* 情報バッジ群（旧 trial-badge） */
+.hero__info-badges {
+  display: flex; flex-wrap: wrap; gap: 6px;
   margin-bottom: 18px;
 }
-.hero__trial-badge__main {
-  font-size: 14px; font-weight: 900; color: #fff; letter-spacing: 0.02em;
+.hero__info-badge {
+  display: inline-flex; align-items: center;
+  font-size: 11px; font-weight: 700;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.5);
+  color: #fff;
+  padding: 5px 10px; border-radius: 20px;
+  letter-spacing: 0.02em;
 }
-.hero__trial-badge__sub {
-  font-size: 11px; color: rgba(255,255,255,0.85); font-weight: 500;
-  border-left: 1px solid rgba(255,255,255,0.4); padding-left: 8px;
+.hero__info-badge--cta {
+  background: var(--color-cta);
+  border-color: var(--color-cta);
+  font-size: 12px;
 }
 
 .hero__sub {
@@ -536,6 +541,7 @@ ul { list-style: none; }
 }
 .price-card__price span { font-size: 14px; font-weight: 500; color: var(--color-text-light); }
 .price-card__price--free { color: var(--color-primary-dark); }
+.price-card__price-sub { font-size: 11px; color: var(--color-text-light); margin-bottom: 4px; }
 .price-card__desc {
   font-size: 13px; color: var(--color-text-light); line-height: 1.78;
   margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--color-border);
@@ -819,6 +825,12 @@ details[open] .other-courses__summary::before { content: '−'; }
   .form-time-group { grid-template-columns: 1fr; }
 }
 
+.form-reassurance {
+  font-size: 13px; color: var(--color-text-light);
+  text-align: center; background: var(--color-primary-light);
+  border-radius: var(--radius-sm); padding: 8px 16px;
+  width: 100%;
+}
 .form-submit { margin-top: 8px; display: flex; flex-direction: column; align-items: center; gap: 12px; }
 .form-note { font-size: 12px; color: var(--color-text-light); text-align: center; line-height: 1.6; }
 
@@ -930,4 +942,20 @@ details[open] .other-courses__summary::before { content: '−'; }
   .floating-cta { display: none; }
   body { padding-bottom: 0; }
   .voice-cards { grid-template-columns: 1fr 1fr 1fr; }
+  .section-lead { font-size: 16px; }
 }
+
+/* PC body text max-width */
+@media (min-width: 768px) {
+  .section .container > p,
+  .pain-closing,
+  .instructor__bio,
+  .instructor__message {
+    max-width: 720px;
+  }
+}
+
+/* ==============================
+   is-hidden-until-ready
+============================== */
+.is-hidden-until-ready { display: none; }
