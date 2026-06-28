@@ -87,6 +87,15 @@ ul { list-style: none; }
   box-shadow: 0 4px 16px rgba(6,199,85,0.3);
 }
 .btn--line:hover { background: #05b34c; transform: translateY(-2px); }
+.btn--line-sub {
+  background: transparent;
+  border: 1.5px solid rgba(255,255,255,0.6);
+  color: rgba(255,255,255,0.9);
+  box-shadow: none;
+  font-size: 14px;
+  padding: 12px 24px;
+}
+.btn--line-sub:hover { background: rgba(255,255,255,0.1); transform: none; }
 
 .cta-block {
   display: flex; flex-direction: column;
@@ -169,6 +178,12 @@ ul { list-style: none; }
   color: #0c3d52;
   padding: 4px 10px; border-radius: 20px;
 }
+.hero__badge--highlight {
+  background: var(--color-cta);
+  border-color: var(--color-cta);
+  color: #fff;
+  font-size: 12px;
+}
 .hero__eyebrow { font-size: 12px; color: rgba(255,255,255,0.75); font-weight: 500; margin-bottom: 6px; }
 .hero__title {
   font-size: clamp(22px, 6.5vw, 34px); font-weight: 900; color: #fff;
@@ -234,6 +249,11 @@ ul { list-style: none; }
   .hero__badge {
     background: rgba(255,255,255,0.16);
     border-color: rgba(255,255,255,0.38);
+    color: #fff;
+  }
+  .hero__badge--highlight {
+    background: var(--color-cta);
+    border-color: var(--color-cta);
     color: #fff;
   }
   .hero__title { font-size: clamp(28px, 3.2vw, 42px); }
