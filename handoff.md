@@ -54,7 +54,7 @@ images内の主なファイル：
 - images/lesson-scene.jpg（レッスン風景）
 - images/trial-lesson.jpg（無料体験・相談風景）
 - images/speech-structure-board.jpg（話の組み立て説明写真）
-- images/empathy-nervous.jpg（緊張する人物・共感写真）
+- images/empathy-worries.jpg（悩み訴求イラスト・共感画像）
 - images/classroom-kokubunji.jpg（国分寺教室写真）
 - images/classroom-hachioji.jpg（八王子教室写真）
 - images/voice-01.jpg / voice-02.jpg / voice-03.jpg（お客様の声アバター）
