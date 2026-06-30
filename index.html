@@ -1025,16 +1025,18 @@
     <p class="section-lead">勧誘なし。まずはお気軽にどうぞ。</p>
 
     <!--
-      ▼ フォーム送信先（Formspree）設定方法 ▼
+      ▼ TODO: FormspreeのエンドポイントURLに差し替え ▼
       1. https://formspree.io/ で無料登録し、新規フォームを作成
       2. 発行される form ID（例：xyzabcd）を取得
-      3. 下の action="https://formspree.io/f/ここにID" のIDを差し替える
-      ※ 現在は仮ID（YOUR_FORM_ID）のため、このままでは送信されません。
+      3. 下の action="https://formspree.io/f/YOUR_FORM_ID" の「YOUR_FORM_ID」を実IDに差し替える
+      ※ 差し替えるまでは送信されません（送信時にその旨アラート表示されます）。
     -->
     <form class="form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
 
-      <!-- Formspree用設定（任意で編集可） -->
+      <!-- Formspree用 hidden 項目 -->
       <input type="hidden" name="_subject" value="【話し方教室アナグラム】無料体験お申し込み" />
+      <input type="hidden" name="form_name" value="話し方教室アナグラム 無料体験申込" />
+      <input type="hidden" name="source_page" value="hanashikata-lp" />
 
       <div class="form-group">
         <label class="form-label" for="name">お名前<span class="required">必須</span></label>
