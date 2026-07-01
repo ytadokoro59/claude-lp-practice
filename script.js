@@ -43,59 +43,38 @@ if ('IntersectionObserver' in window) {
 }
 
 /* ==============================
-   Form Submit (Formspree)
+   Form Submit (通常POST → Formspree → thanks.html へリダイレクト)
+   ※ submit時はバリデーションのみJSで実行し、OKなら通常送信させる
 ============================== */
 const form = document.getElementById('contact-form');
 if (form) {
-  const showSuccess = () => {
-    form.innerHTML = `
-      <div style="text-align:center;padding:32px 0;color:#fff;">
-        <div style="font-size:48px;margin-bottom:16px;">✓</div>
-        <p style="font-size:18px;font-weight:700;margin-bottom:8px;">お申し込みありがとうございます</p>
-        <p style="font-size:14px;opacity:0.8;line-height:1.8;">担当者より日程調整のご連絡をいたします。<br>しばらくお待ちください。</p>
-      </div>`;
-  };
+  form.addEventListener('submit', e => {
+    // お名前・希望教室・第1希望日はHTMLのrequiredでブラウザが先に検証するため、
+    // ここではブラウザで検証できない項目のみを追加チェックする。
 
-  form.addEventListener('submit', async e => {
-    e.preventDefault();
-
-    // メールアドレスまたは電話番号のどちらか一方は必須
+    // 1) メールアドレスまたは電話番号のどちらか一方は必須
     const email = form.querySelector('#email');
     const tel = form.querySelector('#tel');
     if (!email.value.trim() && !tel.value.trim()) {
+      e.preventDefault();
       alert('メールアドレスまたは電話番号の、どちらか一方をご入力ください。');
       email.focus();
       return;
     }
 
-    const btn = form.querySelector('.form-submit-btn');
-    const originalLabel = btn.textContent;
-    btn.textContent = '送信中...';
-    btn.disabled = true;
-
-    // Formspreeの正式IDが未設定の場合のガード
-    if (form.action.indexOf('YOUR_FORM_ID') !== -1) {
-      alert('※フォーム送信先（Formspree ID）が未設定です。index.html の form action を正式IDに差し替えてください。');
-      btn.textContent = originalLabel;
-      btn.disabled = false;
+    // 2) 第1希望の時間帯を1つ以上選択（チェックボックスのため必須チェックを補完）
+    const firstTime = form.querySelectorAll('input[name="first_choice_time[]"]:checked');
+    if (firstTime.length === 0) {
+      e.preventDefault();
+      alert('第1希望の時間帯を1つ以上お選びください。');
       return;
     }
 
-    try {
-      const res = await fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { Accept: 'application/json' }
-      });
-      if (res.ok) {
-        showSuccess();
-      } else {
-        throw new Error('送信に失敗しました');
-      }
-    } catch (err) {
-      alert('送信中にエラーが発生しました。お手数ですが、時間をおいて再度お試しください。');
-      btn.textContent = originalLabel;
-      btn.disabled = false;
+    // バリデーションOK → 通常POSTでFormspreeへ送信し、_next(thanks.html)へリダイレクト
+    const btn = form.querySelector('.form-submit-btn');
+    if (btn) {
+      btn.textContent = '送信中...';
+      btn.disabled = true;
     }
   });
 }
