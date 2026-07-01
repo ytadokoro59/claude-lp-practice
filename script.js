@@ -43,20 +43,22 @@ if ('IntersectionObserver' in window) {
 }
 
 /* ==============================
-   Form Submit (通常POST → Formspree → thanks.html へリダイレクト)
-   ※ submit時はバリデーションのみJSで実行し、OKなら通常送信させる
+   Form Submit (AJAX → 成功時に自社 thanks.html へ遷移)
+   ※ Formspree標準サンクスページには飛ばさず、CV計測用の thanks.html へ遷移
 ============================== */
 const form = document.getElementById('contact-form');
 if (form) {
-  form.addEventListener('submit', e => {
-    // お名前・希望教室・第1希望日はHTMLのrequiredでブラウザが先に検証するため、
-    // ここではブラウザで検証できない項目のみを追加チェックする。
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+
+    // --- バリデーション ---
+    // お名前・希望教室・第1希望日は HTML の required でブラウザが先に検証する。
+    // ここではブラウザで検証できない項目を追加チェックする。
 
     // 1) メールアドレスまたは電話番号のどちらか一方は必須
     const email = form.querySelector('#email');
     const tel = form.querySelector('#tel');
     if (!email.value.trim() && !tel.value.trim()) {
-      e.preventDefault();
       alert('メールアドレスまたは電話番号の、どちらか一方をご入力ください。');
       email.focus();
       return;
@@ -65,16 +67,36 @@ if (form) {
     // 2) 第1希望の時間帯を1つ以上選択（チェックボックスのため必須チェックを補完）
     const firstTime = form.querySelectorAll('input[name="first_choice_time[]"]:checked');
     if (firstTime.length === 0) {
-      e.preventDefault();
       alert('第1希望の時間帯を1つ以上お選びください。');
       return;
     }
 
-    // バリデーションOK → 通常POSTでFormspreeへ送信し、_next(thanks.html)へリダイレクト
+    // --- 送信 ---
     const btn = form.querySelector('.form-submit-btn');
+    const originalLabel = btn ? btn.textContent : '';
     if (btn) {
       btn.textContent = '送信中...';
-      btn.disabled = true;
+      btn.disabled = true; // 二重送信防止
+    }
+
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' }
+      });
+      if (res.ok) {
+        // 成功 → 自社サンクスページ（CV計測地点）へ遷移
+        window.location.href = 'thanks.html';
+      } else {
+        throw new Error('送信に失敗しました');
+      }
+    } catch (err) {
+      alert('送信に失敗しました。時間をおいて再度お試しください。');
+      if (btn) {
+        btn.textContent = originalLabel;
+        btn.disabled = false;
+      }
     }
   });
 }
