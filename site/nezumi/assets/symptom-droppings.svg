@@ -1,0 +1,33 @@
+<svg viewBox="0 0 400 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="衛生面の不安と清掃・点検のイメージ">
+  <defs>
+    <linearGradient id="beigeBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f3ece0"/>
+      <stop offset="100%" stop-color="#d9cdb8"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="170" rx="16" fill="url(#beigeBg)"/>
+
+  <!-- broom -->
+  <g transform="translate(110,30) rotate(18)">
+    <rect x="0" y="0" width="9" height="90" rx="4.5" fill="#a9c2b3"/>
+    <path d="M-16 84 L34 84 L26 118 L-8 118 Z" fill="#2f6f4f"/>
+  </g>
+
+  <!-- magnifying glass with check -->
+  <g transform="translate(220,40)">
+    <circle cx="34" cy="34" r="32" fill="#ffffff" stroke="#2f6f4f" stroke-width="6"/>
+    <line x1="57" y1="57" x2="84" y2="84" stroke="#2f6f4f" stroke-width="9" stroke-linecap="round"/>
+    <path d="M20 34 l10 10 18 -20" stroke="#2f6f4f" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- sparkle / clean marks -->
+  <path d="M70 130 l4 9 9 4 -9 4 -4 9 -4 -9 -9 -4 9 -4 z" fill="#ff7a30"/>
+  <path d="M310 130 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3 z" fill="#ff7a30" opacity="0.85"/>
+
+  <!-- caution dot (abstract, non-graphic) -->
+  <g transform="translate(150,120)">
+    <polygon points="14,0 28,24 0,24" fill="none" stroke="#c9a36a" stroke-width="3" stroke-linejoin="round"/>
+    <line x1="14" y1="9" x2="14" y2="16" stroke="#c9a36a" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="14" cy="20" r="1.6" fill="#c9a36a"/>
+  </g>
+</svg>

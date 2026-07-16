@@ -1,0 +1,28 @@
+<svg viewBox="0 0 400 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="配線や断熱材への影響に注意を促すイメージ">
+  <defs>
+    <linearGradient id="riskBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef4ee"/>
+      <stop offset="100%" stop-color="#cfe3d5"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="170" rx="16" fill="url(#riskBg)"/>
+
+  <!-- insulation roll -->
+  <g transform="translate(50,55)">
+    <rect x="0" y="0" width="130" height="60" rx="30" fill="#fdf6ec" stroke="#d8cdb8" stroke-width="4"/>
+    <circle cx="30" cy="30" r="20" fill="#f3ece0" stroke="#d8cdb8" stroke-width="4"/>
+    <circle cx="30" cy="30" r="8" fill="#e8ddca"/>
+  </g>
+
+  <!-- cable with nibble marks -->
+  <path d="M230 30 q35 20 0 45 t0 45" stroke="#2f6f4f" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <circle cx="244" cy="58" r="5" fill="#ff7a30"/>
+  <circle cx="222" cy="100" r="5" fill="#ff7a30"/>
+
+  <!-- caution triangle -->
+  <g transform="translate(300,90)">
+    <polygon points="28,0 56,52 0,52" fill="#ff7a30"/>
+    <rect x="25" y="16" width="6" height="20" fill="#ffffff"/>
+    <circle cx="28" cy="42" r="3" fill="#ffffff"/>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg viewBox="0 0 400 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="屋根まわりの隙間や侵入経路を確認するイメージ">
+  <defs>
+    <linearGradient id="prevBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dff0e6"/>
+      <stop offset="100%" stop-color="#bfe0cd"/>
+    </linearGradient>
+    <marker id="arrowHead" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#2f6f4f"/>
+    </marker>
+  </defs>
+  <rect width="400" height="170" rx="16" fill="url(#prevBg)"/>
+
+  <!-- roof -->
+  <polygon points="60,100 200,30 340,100" fill="#fdf6ec" stroke="#d8cdb8" stroke-width="4"/>
+  <!-- wall -->
+  <rect x="90" y="100" width="220" height="55" fill="#ffffff" stroke="#d8cdb8" stroke-width="4"/>
+
+  <!-- vent gap (entry point) -->
+  <rect x="170" y="85" width="60" height="13" rx="4" fill="#a9c2b3"/>
+  <circle cx="200" cy="91" r="24" fill="none" stroke="#ff7a30" stroke-width="4" stroke-dasharray="6 6"/>
+
+  <!-- gable gap (entry point) -->
+  <rect x="288" y="73" width="20" height="15" rx="3" fill="#a9c2b3"/>
+  <circle cx="298" cy="80" r="17" fill="none" stroke="#ff7a30" stroke-width="4" stroke-dasharray="6 6"/>
+
+  <!-- arrow pointing to roof gap -->
+  <path d="M200 40 v32" stroke="#2f6f4f" stroke-width="4" marker-end="url(#arrowHead)"/>
+</svg>

@@ -1,0 +1,41 @@
+<svg viewBox="0 0 400 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="スタッフが屋根まわりを点検しているイメージ">
+  <defs>
+    <linearGradient id="meritBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef4ee"/>
+      <stop offset="100%" stop-color="#cfe3d5"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="170" rx="16" fill="url(#meritBg)"/>
+
+  <!-- house -->
+  <polygon points="220,120 310,60 400,120" fill="#fdf6ec"/>
+  <rect x="240" y="120" width="140" height="40" fill="#ffffff"/>
+  <circle cx="310" cy="92" r="10" fill="#ffe9b8" opacity="0.9"/>
+
+  <!-- ladder -->
+  <g stroke="#a9c2b3" stroke-width="5" stroke-linecap="round">
+    <line x1="195" y1="160" x2="235" y2="55"/>
+    <line x1="218" y1="160" x2="258" y2="55"/>
+    <line x1="200" y1="140" x2="240" y2="132"/>
+    <line x1="206" y1="115" x2="246" y2="107"/>
+    <line x1="212" y1="90" x2="252" y2="82"/>
+  </g>
+
+  <!-- staff person (generic, no logo) -->
+  <g transform="translate(50,40)">
+    <circle cx="40" cy="20" r="20" fill="#fdf6ec"/>
+    <path d="M20 18 a20 14 0 0 1 40 0 z" fill="#2f6f4f"/>
+    <rect x="14" y="40" width="52" height="62" rx="14" fill="#4f8f6b"/>
+    <rect x="18" y="98" width="20" height="36" rx="6" fill="#234f38"/>
+    <rect x="42" y="98" width="20" height="36" rx="6" fill="#234f38"/>
+  </g>
+
+  <!-- clipboard -->
+  <g transform="translate(70,108)">
+    <rect x="0" y="0" width="36" height="46" rx="4" fill="#ffffff" stroke="#d8cdb8" stroke-width="3"/>
+    <rect x="8" y="-6" width="20" height="10" rx="3" fill="#ff7a30"/>
+    <line x1="7" y1="14" x2="29" y2="14" stroke="#cfe3d5" stroke-width="3"/>
+    <line x1="7" y1="22" x2="29" y2="22" stroke="#cfe3d5" stroke-width="3"/>
+    <line x1="7" y1="30" x2="21" y2="30" stroke="#cfe3d5" stroke-width="3"/>
+  </g>
+</svg>

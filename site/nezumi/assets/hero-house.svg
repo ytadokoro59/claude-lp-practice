@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-label="夜、屋根裏の物音に気づいて天井を見上げる住人のイラスト">
+  <!-- 夜空 -->
+  <rect width="800" height="400" fill="#2b3a5c"/>
+  <circle cx="700" cy="70" r="38" fill="#ffe9b8"/>
+  <circle cx="686" cy="62" r="30" fill="#2b3a5c" opacity="0.35"/>
+  <g fill="#ffffff" opacity="0.8">
+    <circle cx="90" cy="60" r="3"/><circle cx="180" cy="40" r="2"/><circle cx="300" cy="55" r="2.5"/>
+    <circle cx="430" cy="35" r="2"/><circle cx="560" cy="60" r="3"/><circle cx="640" cy="150" r="2"/>
+    <circle cx="60" cy="140" r="2"/><circle cx="760" cy="180" r="2.5"/>
+  </g>
+  <!-- 地面 -->
+  <rect y="356" width="800" height="44" fill="#22304e"/>
+  <ellipse cx="400" cy="360" rx="330" ry="12" fill="#1c2942"/>
+  <!-- 家（断面） -->
+  <g>
+    <!-- 屋根 -->
+    <polygon points="120,196 400,78 680,196" fill="#8d5a44"/>
+    <polygon points="150,196 400,92 650,196" fill="#a96a50"/>
+    <!-- 屋根裏（暗い空間） -->
+    <polygon points="168,192 400,100 632,192" fill="#4a3b33"/>
+    <!-- 梁 -->
+    <rect x="180" y="184" width="440" height="8" fill="#6d5240"/>
+    <line x1="290" y1="145" x2="290" y2="184" stroke="#6d5240" stroke-width="7"/>
+    <line x1="510" y1="145" x2="510" y2="184" stroke="#6d5240" stroke-width="7"/>
+    <!-- ネズミのシルエット -->
+    <g fill="#2e2823">
+      <ellipse cx="418" cy="168" rx="26" ry="14"/>
+      <circle cx="446" cy="162" r="9"/>
+      <circle cx="451" cy="154" r="4.5"/>
+      <path d="M392 168 Q368 176 356 164" stroke="#2e2823" stroke-width="4" fill="none" stroke-linecap="round"/>
+    </g>
+    <!-- 物音マーク -->
+    <g stroke="#ffd23e" stroke-width="4" fill="none" stroke-linecap="round">
+      <path d="M462 138 l10 -12 l-4 12 l10 -10"/>
+      <path d="M382 132 l-10 -12 l4 12 l-10 -10"/>
+    </g>
+    <!-- 壁 -->
+    <rect x="168" y="192" width="464" height="168" fill="#fdf6ec"/>
+    <rect x="168" y="192" width="464" height="10" fill="#e8dcc8"/>
+    <!-- 寝室（室内） -->
+    <rect x="188" y="212" width="424" height="148" fill="#fff3dd"/>
+    <!-- 窓（夜） -->
+    <rect x="212" y="232" width="86" height="70" rx="6" fill="#31446b"/>
+    <line x1="255" y1="232" x2="255" y2="302" stroke="#fdf6ec" stroke-width="5"/>
+    <line x1="212" y1="267" x2="298" y2="267" stroke="#fdf6ec" stroke-width="5"/>
+    <!-- スタンドライト -->
+    <g>
+      <rect x="330" y="300" width="8" height="46" fill="#8d6748"/>
+      <polygon points="310,302 358,302 348,276 320,276" fill="#ffb85c"/>
+      <ellipse cx="334" cy="300" rx="34" ry="9" fill="#ffe1a8" opacity="0.55"/>
+    </g>
+    <!-- ベッドと人物（見上げる） -->
+    <g>
+      <rect x="380" y="316" width="204" height="30" rx="8" fill="#b98a5f"/>
+      <rect x="388" y="300" width="188" height="24" rx="10" fill="#7fa88f"/>
+      <rect x="530" y="292" width="44" height="18" rx="8" fill="#fffdf6"/>
+      <!-- 人物：布団から上半身、上を見る -->
+      <circle cx="470" cy="272" r="20" fill="#f2c9a4"/>
+      <path d="M450 272 a20 20 0 0 1 40 0 z" fill="#3a3230"/>
+      <circle cx="477" cy="278" r="2.6" fill="#3a3230"/>
+      <circle cx="463" cy="278" r="2.6" fill="#3a3230"/>
+      <path d="M466 286 q5 4 10 0" stroke="#3a3230" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      <rect x="450" y="290" width="40" height="18" rx="9" fill="#e8a87c"/>
+      <!-- 汗マーク -->
+      <path d="M500 250 q6 8 0 12 q-6 -4 0 -12" fill="#8fc7e8"/>
+    </g>
+    <!-- 視線（天井へ） -->
+    <g stroke="#ffd23e" stroke-width="3" fill="none" stroke-dasharray="2 8" stroke-linecap="round">
+      <path d="M470 246 L440 200"/>
+    </g>
+    <!-- ドア -->
+    <rect x="560" y="252" width="40" height="108" rx="4" fill="#c99a6b"/>
+    <circle cx="568" cy="308" r="3.5" fill="#8d6748"/>
+  </g>
+</svg>

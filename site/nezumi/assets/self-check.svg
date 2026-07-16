@@ -1,0 +1,8 @@
+<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="セルフチェックリストのアイコン">
+  <rect x="9" y="6" width="30" height="38" rx="4" fill="#eef4ee" stroke="#2f6f4f" stroke-width="3"/>
+  <rect x="17" y="2" width="14" height="8" rx="2" fill="#ff7a30"/>
+  <path d="M15 19 l4 4 8 -9" stroke="#2f6f4f" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M15 31 l4 4 8 -9" stroke="#2f6f4f" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="29" y1="22" x2="34" y2="22" stroke="#cfe3d5" stroke-width="3" stroke-linecap="round"/>
+  <line x1="29" y1="34" x2="34" y2="34" stroke="#cfe3d5" stroke-width="3" stroke-linecap="round"/>
+</svg>

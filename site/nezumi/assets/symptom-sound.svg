@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" role="img" aria-label="深夜、天井裏の物音で眠れない人のイラスト">
+  <rect width="800" height="340" fill="#3e5578"/>
+  <!-- 天井裏ストリップ -->
+  <rect width="800" height="74" fill="#4a3b33"/>
+  <rect y="74" width="800" height="14" fill="#e8dcc8"/>
+  <!-- 足あと -->
+  <g fill="#8d7a68" opacity="0.9">
+    <ellipse cx="180" cy="40" rx="7" ry="4.5" transform="rotate(-15 180 40)"/>
+    <ellipse cx="212" cy="52" rx="7" ry="4.5" transform="rotate(-15 212 52)"/>
+    <ellipse cx="246" cy="38" rx="7" ry="4.5" transform="rotate(-15 246 38)"/>
+    <ellipse cx="280" cy="50" rx="7" ry="4.5" transform="rotate(-15 280 50)"/>
+  </g>
+  <!-- ネズミ -->
+  <g fill="#2e2823">
+    <ellipse cx="360" cy="46" rx="24" ry="13"/>
+    <circle cx="386" cy="40" r="8.5"/>
+    <circle cx="391" cy="33" r="4"/>
+    <path d="M336 46 Q314 54 304 44" stroke="#2e2823" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- 音マーク（天井から放射） -->
+  <g stroke="#ffd23e" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M420 100 l14 -18 l-6 18 l14 -15"/>
+    <path d="M330 104 l-14 -18 l6 18 l-14 -15"/>
+    <path d="M375 108 l0 -20"/>
+  </g>
+  <!-- 月明かりの窓 -->
+  <rect x="620" y="120" width="110" height="90" rx="8" fill="#31446b"/>
+  <circle cx="676" cy="152" r="18" fill="#ffe9b8"/>
+  <line x1="675" y1="120" x2="675" y2="210" stroke="#3e5578" stroke-width="6"/>
+  <line x1="620" y1="165" x2="730" y2="165" stroke="#3e5578" stroke-width="6"/>
+  <!-- ベッド（側面） -->
+  <rect x="120" y="264" width="420" height="42" rx="10" fill="#8d6748"/>
+  <rect x="132" y="236" width="396" height="42" rx="16" fill="#7fa88f"/>
+  <rect x="132" y="228" width="120" height="26" rx="12" fill="#fffdf6"/>
+  <!-- 人物（横になり目が開いている） -->
+  <circle cx="192" cy="222" r="22" fill="#f2c9a4"/>
+  <path d="M172 216 a22 22 0 0 1 40 4 l2 -10 a22 16 0 0 0 -44 -2 z" fill="#3a3230"/>
+  <circle cx="200" cy="220" r="3" fill="#3a3230"/>
+  <circle cx="184" cy="220" r="3" fill="#3a3230"/>
+  <path d="M186 233 l14 0" stroke="#3a3230" stroke-width="2.6" stroke-linecap="round"/>
+  <!-- 時計 2:00 -->
+  <g>
+    <rect x="586" y="252" width="88" height="54" rx="10" fill="#fffdf6"/>
+    <rect x="596" y="262" width="68" height="34" rx="5" fill="#2b3a5c"/>
+    <text x="630" y="287" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#7fe3a0">2:00</text>
+  </g>
+  <!-- 疑問マーク -->
+  <g fill="#ffd23e">
+    <path d="M236 178 q0 -16 16 -16 q16 0 16 14 q0 10 -10 13 q-6 2 -6 9" stroke="#ffd23e" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <circle cx="252" cy="208" r="4"/>
+  </g>
+</svg>

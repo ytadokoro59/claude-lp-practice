@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" role="img" aria-label="換気口に出入りするコウモリと下にたまった糞のイラスト">
+  <rect width="800" height="340" fill="#f7ecd9"/>
+  <!-- 外壁 -->
+  <rect width="800" height="300" fill="#f2e4cc"/>
+  <g stroke="#e0d0b0" stroke-width="3">
+    <line x1="0" y1="75" x2="800" y2="75"/><line x1="0" y1="150" x2="800" y2="150"/><line x1="0" y1="225" x2="800" y2="225"/>
+    <line x1="260" y1="0" x2="260" y2="75"/><line x1="540" y1="75" x2="540" y2="150"/><line x1="300" y1="150" x2="300" y2="225"/>
+  </g>
+  <!-- 換気口とコウモリ -->
+  <g>
+    <circle cx="400" cy="110" r="52" fill="#d9c9ad"/>
+    <circle cx="400" cy="110" r="42" fill="#5c4a3a"/>
+    <g stroke="#d9c9ad" stroke-width="6">
+      <line x1="366" y1="96" x2="434" y2="96"/>
+      <line x1="362" y1="112" x2="438" y2="112"/>
+      <line x1="368" y1="128" x2="432" y2="128"/>
+    </g>
+    <!-- 隙間から覗くコウモリ -->
+    <g fill="#241f33">
+      <path d="M382 84 q9 -12 20 -7 q3 -9 12 -9 q9 0 12 9 q11 -5 20 7 q-14 -2 -19 5 q-5 -7 -13 -7 q-8 0 -13 7 q-5 -7 -19 -5 z"/>
+    </g>
+    <circle cx="410" cy="76" r="2.4" fill="#ffd23e"/>
+    <circle cx="418" cy="76" r="2.4" fill="#ffd23e"/>
+  </g>
+  <!-- 音マーク -->
+  <g stroke="#e8a13c" stroke-width="4.5" fill="none" stroke-linecap="round">
+    <path d="M470 70 l12 -14 l-5 14 l12 -12"/>
+    <path d="M330 74 l-12 -14 l5 14 l-12 -12"/>
+  </g>
+  <!-- 落ちる糞と堆積 -->
+  <g fill="#4a3b2f">
+    <ellipse cx="396" cy="196" rx="4" ry="7" transform="rotate(12 396 196)"/>
+    <ellipse cx="406" cy="232" rx="4" ry="7" transform="rotate(-10 406 232)"/>
+    <path d="M340 300 q30 -26 60 -26 q34 0 62 26 z"/>
+    <ellipse cx="330" cy="298" rx="9" ry="4"/>
+    <ellipse cx="474" cy="296" rx="10" ry="4.5"/>
+  </g>
+  <!-- 臭いマーク -->
+  <g stroke="#8fae72" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.9">
+    <path d="M356 268 q8 -10 0 -20 q-8 -10 0 -20"/>
+    <path d="M452 268 q8 -10 0 -20 q-8 -10 0 -20"/>
+  </g>
+  <!-- 地面 -->
+  <rect y="300" width="800" height="40" fill="#d9c9ad"/>
+  <!-- 虫めがねの視点（気づき） -->
+  <g>
+    <circle cx="620" cy="240" r="44" fill="#ffffff" opacity="0.5" stroke="#2f6f4f" stroke-width="7"/>
+    <line x1="650" y1="274" x2="682" y2="308" stroke="#2f6f4f" stroke-width="11" stroke-linecap="round"/>
+    <ellipse cx="612" cy="238" rx="4" ry="7" fill="#4a3b2f" transform="rotate(12 612 238)"/>
+    <ellipse cx="628" cy="248" rx="4" ry="7" fill="#4a3b2f" transform="rotate(-14 628 248)"/>
+  </g>
+</svg>

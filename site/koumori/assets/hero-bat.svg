@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-label="夕暮れ、軒先から飛び立つコウモリと住宅のイラスト">
+  <!-- 夕暮れの空 -->
+  <rect width="800" height="400" fill="#5c4a78"/>
+  <rect y="120" width="800" height="140" fill="#8a5a80" opacity="0.55"/>
+  <rect y="220" width="800" height="90" fill="#c96f5a" opacity="0.45"/>
+  <circle cx="672" cy="248" r="46" fill="#ffb85c"/>
+  <circle cx="672" cy="248" r="62" fill="#ffb85c" opacity="0.3"/>
+  <!-- 遠景の山 -->
+  <path d="M0 300 q120 -50 240 0 q140 -60 300 0 q140 -40 260 0 l0 100 l-800 0 z" fill="#3e3355"/>
+  <!-- 地面 -->
+  <rect y="340" width="800" height="60" fill="#2e2742"/>
+  <!-- 家（外観） -->
+  <g>
+    <polygon points="110,210 300,110 490,210" fill="#6d4a3a"/>
+    <polygon points="132,206 300,120 468,206" fill="#8d5a44"/>
+    <rect x="150" y="206" width="300" height="150" fill="#f7ecd9"/>
+    <rect x="150" y="206" width="300" height="10" fill="#d9c9ad"/>
+    <!-- 軒下の隙間（侵入口） -->
+    <rect x="296" y="196" width="60" height="12" rx="6" fill="#3a2f28"/>
+    <!-- 換気口 -->
+    <circle cx="200" cy="240" r="16" fill="#d9c9ad"/>
+    <g stroke="#8d7a5f" stroke-width="3">
+      <line x1="188" y1="234" x2="212" y2="234"/>
+      <line x1="186" y1="241" x2="214" y2="241"/>
+      <line x1="188" y1="248" x2="212" y2="248"/>
+    </g>
+    <!-- 窓（明かり・見上げる人影） -->
+    <rect x="240" y="252" width="86" height="72" rx="6" fill="#ffd98f"/>
+    <line x1="283" y1="252" x2="283" y2="324" stroke="#f7ecd9" stroke-width="5"/>
+    <path d="M252 324 q0 -26 18 -26 q18 0 18 26 z" fill="#5c4a3a"/>
+    <circle cx="270" cy="292" r="11" fill="#5c4a3a"/>
+    <!-- ドア -->
+    <rect x="382" y="272" width="42" height="84" rx="4" fill="#a06a48"/>
+  </g>
+  <!-- コウモリたち -->
+  <g fill="#241f33">
+    <path d="M360 150 q10 -14 24 -8 q4 -10 14 -10 q10 0 14 10 q14 -6 24 8 q-16 -2 -22 6 q-6 -8 -16 -8 q-10 0 -16 8 q-6 -8 -22 -6 z"/>
+    <path d="M470 100 q8 -11 19 -6 q3 -8 11 -8 q8 0 11 8 q11 -5 19 6 q-13 -2 -18 5 q-5 -6 -12 -6 q-8 0 -13 6 q-5 -7 -17 -5 z"/>
+    <path d="M560 160 q7 -9 15 -5 q3 -7 9 -7 q7 0 9 7 q9 -4 15 5 q-10 -1 -14 4 q-4 -5 -10 -5 q-6 0 -10 5 q-4 -5 -14 -4 z"/>
+    <path d="M320 90 q6 -8 13 -4 q2 -6 8 -6 q6 0 8 6 q8 -4 13 4 q-9 -1 -12 4 q-4 -5 -9 -5 q-5 0 -9 5 q-3 -5 -12 -4 z"/>
+  </g>
+  <!-- 軒先から出る動線 -->
+  <g stroke="#ffd23e" stroke-width="3" fill="none" stroke-dasharray="3 9" stroke-linecap="round" opacity="0.85">
+    <path d="M330 196 Q345 170 368 152"/>
+  </g>
+  <!-- 星 -->
+  <g fill="#ffffff" opacity="0.7">
+    <circle cx="80" cy="60" r="2.5"/><circle cx="180" cy="40" r="2"/><circle cx="420" cy="50" r="2.5"/><circle cx="740" cy="60" r="2"/>
+  </g>
+</svg>

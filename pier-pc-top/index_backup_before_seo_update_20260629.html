@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google Tag Manager / 本番ID（GTM-THBK68D）設定済み -->
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-THBK68D');
+</script>
+<!-- End Google Tag Manager -->
+<title>パソコン教室ピア｜初心者向け個別指導のパソコン教室</title>
+<meta name="description" content="パソコン教室ピアは、Excel・Word・PowerPointを初心者にもわかりやすく学べる地域密着のパソコン教室です。国分寺教室・八王子教室を運営し、再就職・資格取得・資料作成をサポートします。">
+<!-- canonical / OGP: 本番URLが変わる場合はここを更新してください -->
+<link rel="canonical" href="https://pier-pc.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="パソコン教室ピア">
+<meta property="og:title" content="パソコン教室ピア｜初心者向け個別指導のパソコン教室">
+<meta property="og:description" content="パソコン教室ピアは、Excel・Word・PowerPointを初心者にもわかりやすく学べる地域密着のパソコン教室です。">
+<meta property="og:url" content="https://pier-pc.com/">
+<meta property="og:image" content="https://pier-pc.com/kokubunji/images/kv-lesson.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Zen+Maru+Gothic:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FBF7F1; --surface:#fff; --navy:#26384e; --ink:#3a322c; --ink-soft:#6f655d;
+  --blue:#34657F; --apricot:#E68A6F; --apricot-d:#CE6E54; --marker:#FCE0A6;
+  --cta:#E85F45; --cta-d:#D94F38;
+  --line:#EAE0D5; --band:#F4EDE4; --band-blue:#EEF3F5;
+  --shadow:0 14px 34px -18px rgba(40,55,78,.4);
+  --radius:18px; --maxw:1080px;
+}
+*{box-sizing:border-box;}
+body{margin:0;font-family:"Noto Sans JP",sans-serif;color:var(--ink);background:var(--paper);line-height:1.9;-webkit-font-smoothing:antialiased;}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px;}
+section.blk{padding:64px 0;}
+.band{background:var(--band);}
+.band-blue{background:var(--band-blue);}
+
+/* header */
+header{position:sticky;top:0;z-index:60;background:rgba(251,247,241,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+.hbar{display:flex;align-items:center;justify-content:space-between;height:62px;}
+.logo-img-link{display:flex;align-items:center;flex:none;}
+.logo-stack{display:flex;flex-direction:column;align-items:flex-start;line-height:1.1;}
+.logo-img{display:block;width:auto;height:32px;max-width:160px;object-fit:contain;}
+.logo-caption{margin-top:2px;font-size:10.5px;font-weight:700;color:var(--ink-soft);letter-spacing:.02em;white-space:nowrap;}
+nav.pc{display:flex;gap:18px;}
+nav.pc a{font-size:13px;color:var(--ink-soft);font-weight:500;}
+nav.pc a:hover{color:var(--navy);}
+.hcta{display:inline-flex;align-items:center;gap:6px;background:var(--cta);color:#fff;font-weight:700;font-size:13.5px;padding:9px 16px;border-radius:999px;box-shadow:var(--shadow);}
+.hcta:hover{background:var(--cta-d);}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:8px;}
+.burger span{display:block;width:22px;height:2px;background:var(--navy);margin:5px 0;border-radius:2px;}
+.mnav{display:none;flex-direction:column;padding:6px 22px 16px;border-top:1px solid var(--line);background:var(--paper);}
+.mnav a{padding:11px 0;border-bottom:1px dashed var(--line);font-size:15px;color:var(--ink);}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;font-weight:700;border-radius:999px;padding:13px 22px;font-size:14.5px;border:2px solid transparent;transition:.2s;cursor:pointer;text-decoration:none;text-align:center;line-height:1.4;}
+.btn-p{background:var(--cta);color:#fff;box-shadow:var(--shadow);}
+.btn-p:hover{background:var(--cta-d);transform:translateY(-1px);}
+.btn-t{background:#fff;color:var(--navy);border-color:var(--navy);}
+.btn-t:hover{background:var(--band);}
+.btn-s{background:var(--blue);color:#fff;}
+.btn-s:hover{filter:brightness(1.08);}
+
+/* placeholder image box (画像が無くても崩れない) */
+.ph{position:relative;overflow:hidden;border-radius:var(--radius);background:var(--band);aspect-ratio:4/3;}
+.ph::after{content:"パソコン教室ピア";position:absolute;inset:0;display:grid;place-items:center;color:var(--ink-soft);opacity:.45;font-family:"Zen Maru Gothic";font-weight:700;font-size:14px;z-index:0;}
+.ph img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;display:block;}
+
+/* section heading */
+.ey{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;margin-bottom:34px;}
+.ey .tag{display:inline-flex;align-items:center;gap:10px;font-family:"Zen Maru Gothic";font-weight:700;color:var(--apricot-d);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;}
+.ey .tag::before,.ey .tag::after{content:"";width:20px;height:2px;border-radius:2px;background:var(--apricot);opacity:.55;}
+.ey h2{font-family:"Zen Kaku Gothic New";font-weight:900;font-size:clamp(22px,3.2vw,31px);margin:0;color:var(--navy);}
+.ey h2::after{content:"";display:block;width:56px;height:4px;margin:13px auto 0;border-radius:999px;background:linear-gradient(90deg,var(--apricot),var(--marker));}
+.ey p{color:var(--ink-soft);margin:4px 0 0;font-size:15px;max-width:42em;}
+.icon-badge{display:inline-grid;place-items:center;width:46px;height:46px;border-radius:15px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);color:var(--apricot-d);margin-bottom:2px;}
+.icon-badge svg{width:25px;height:25px;}
+
+/* soft deco */
+.deco-soft{position:relative;overflow:hidden;}
+.deco-soft > *{position:relative;z-index:1;}
+.deco-soft::before,.deco-soft::after{content:"";position:absolute;border-radius:50%;z-index:0;pointer-events:none;}
+.deco-soft::before{width:340px;height:340px;top:-130px;right:-110px;background:radial-gradient(circle,rgba(230,138,111,.10),transparent 68%);}
+.deco-soft::after{width:320px;height:320px;bottom:-140px;left:-120px;background:radial-gradient(circle,rgba(52,101,127,.07),transparent 68%);}
+
+/* hero */
+.hero{background:linear-gradient(180deg,var(--band-blue),var(--paper));border-bottom:1px solid var(--line);}
+.hero-in{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding:54px 22px 56px;}
+.hero .eyebrow{display:inline-flex;align-items:center;background:var(--navy);color:#fff;font-family:"Zen Maru Gothic";font-weight:700;font-size:12.5px;padding:6px 15px;border-radius:999px;margin-bottom:14px;width:fit-content;}
+.hero h1{font-family:"Zen Kaku Gothic New";font-weight:900;color:var(--navy);font-size:clamp(27px,3.6vw,40px);line-height:1.32;margin:0 0 16px;}
+.hero h1 .mk{position:relative;display:inline-block;}
+.hero h1 .mk::before{content:"";position:absolute;left:-.04em;right:-.04em;bottom:.06em;height:.30em;background:var(--marker);opacity:.9;z-index:-1;border-radius:3px;}
+.hero .lead{font-size:15px;color:var(--ink);margin:0 0 20px;}
+.hero-badges{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 24px;}
+.hero-badges span{display:inline-flex;align-items:center;gap:6px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:12.5px;font-weight:700;color:var(--navy);box-shadow:var(--shadow);}
+.hero-badges span::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--apricot);flex:none;}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;}
+.hero-img{border-radius:24px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);background:var(--band);aspect-ratio:5/4;position:relative;}
+.hero-img::after{content:"パソコン教室ピア 教室の様子";position:absolute;inset:0;display:grid;place-items:center;color:var(--ink-soft);opacity:.45;font-family:"Zen Maru Gothic";font-weight:700;font-size:14px;z-index:0;}
+.hero-img img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;}
+
+/* school cards */
+.schools{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+.school-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column;}
+.school-photo{aspect-ratio:16/9;background:var(--band);position:relative;overflow:hidden;}
+.school-photo::after{content:attr(data-label);position:absolute;inset:0;display:grid;place-items:center;color:var(--ink-soft);opacity:.5;font-family:"Zen Maru Gothic";font-weight:700;font-size:15px;z-index:0;padding:0 16px;text-align:center;}
+.school-photo img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;}
+.school-body{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1;}
+.school-body h3{font-family:"Zen Kaku Gothic New";font-weight:900;font-size:19px;color:var(--navy);margin:0 0 4px;}
+.school-area{font-size:12.5px;font-weight:700;color:var(--apricot-d);margin:0 0 12px;}
+.school-body ul{list-style:none;margin:0 0 18px;padding:0;display:flex;flex-direction:column;gap:7px;}
+.school-body li{font-size:13.5px;color:var(--ink-soft);display:flex;align-items:baseline;gap:8px;}
+.school-body li::before{content:"›";color:var(--apricot);font-weight:900;font-size:15px;flex:none;}
+.school-info{margin:0 0 14px;padding:0;display:flex;flex-direction:column;gap:8px;}
+.school-info .row{display:flex;gap:10px;}
+.school-info dt{flex:none;width:64px;font-size:12px;font-weight:700;color:#fff;background:var(--blue);border-radius:6px;text-align:center;padding:2px 0;height:fit-content;margin-top:2px;}
+.school-info dd{margin:0;font-size:13px;color:var(--ink-soft);line-height:1.65;}
+.school-info dd a{color:var(--blue);font-weight:700;}
+.school-actions{margin-top:auto;display:flex;flex-direction:column;gap:9px;}
+.school-actions .btn{width:100%;}
+
+/* feature cards */
+.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.feat-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px 22px;}
+.feat-card .fi{width:48px;height:48px;border-radius:14px;background:var(--band-blue);color:var(--blue);display:grid;place-items:center;margin-bottom:14px;}
+.feat-card .fi svg{width:26px;height:26px;}
+.feat-card h3{font-family:"Zen Kaku Gothic New";font-weight:900;font-size:16px;color:var(--navy);margin:0 0 8px;line-height:1.45;}
+.feat-card p{font-size:13.5px;color:var(--ink-soft);margin:0;}
+
+/* learn grid */
+.learn-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+.learn-chip{background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:18px 14px;text-align:center;}
+.learn-chip .li{width:42px;height:42px;border-radius:12px;background:var(--band);color:var(--apricot-d);display:grid;place-items:center;margin:0 auto 10px;}
+.learn-chip .li svg{width:23px;height:23px;}
+.learn-chip span{font-family:"Zen Kaku Gothic New";font-weight:700;font-size:13.5px;color:var(--navy);line-height:1.4;display:block;}
+
+/* first-time */
+.first-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);max-width:820px;margin:0 auto;padding:clamp(26px,4vw,40px);}
+.first-card p{font-size:15px;margin:0 0 14px;}
+.first-card p:last-child{margin-bottom:0;}
+.first-card a.inline{color:var(--blue);font-weight:700;text-decoration:underline;}
+
+/* big CTA */
+.cta-final{background:linear-gradient(180deg,#fff 0%,#FFF7EF 100%);border:1px solid #F1E3D5;border-radius:24px;max-width:760px;margin:0 auto;padding:clamp(28px,4vw,44px);text-align:center;position:relative;overflow:hidden;box-shadow:var(--shadow);}
+.cta-final::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--apricot),var(--marker),var(--apricot));}
+.cta-final h2{font-family:"Zen Kaku Gothic New";font-weight:900;color:var(--navy);font-size:clamp(21px,3vw,28px);margin:0 0 14px;line-height:1.45;}
+.cta-final p{font-size:14.5px;color:var(--ink);margin:0 0 22px;}
+.cta-final .actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;}
+.cta-note{font-size:12.5px;color:var(--ink-soft);font-weight:700;margin:18px 0 0;}
+.cta-note::before{content:"✓ ";color:var(--apricot-d);font-weight:900;}
+
+/* faq */
+.faq{max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:12px;}
+.qa{background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:18px 20px;}
+.qa .q{display:flex;gap:10px;font-family:"Zen Kaku Gothic New";font-weight:900;color:var(--navy);font-size:15px;}
+.qa .q .qi{color:var(--apricot-d);}
+.qa .a{display:flex;gap:10px;margin-top:9px;font-size:13.5px;color:var(--ink-soft);}
+.qa .a .ai{color:var(--blue);font-weight:900;font-family:"Zen Kaku Gothic New";}
+
+/* footer */
+footer{background:var(--paper);color:var(--ink-soft);padding:42px 0 46px;font-size:13px;border-top:1px solid var(--line);}
+.frow{display:flex;justify-content:space-between;gap:26px;flex-wrap:wrap;}
+.fcol h4{font-family:"Zen Kaku Gothic New";font-weight:900;color:var(--navy);font-size:14px;margin:0 0 10px;}
+.fcol a,.fcol p{display:block;margin:0 0 7px;color:var(--ink-soft);}
+.fcol a{color:var(--navy);}
+.fcol a:hover{text-decoration:underline;}
+.footer-logo-img{height:30px;width:auto;max-width:160px;object-fit:contain;margin-bottom:12px;}
+.cr{margin-top:26px;border-top:1px solid var(--line);padding-top:16px;}
+
+/* responsive */
+@media(max-width:880px){
+  .hero-in{grid-template-columns:1fr;gap:26px;padding:40px 22px 44px;}
+  .hero-img{order:-1;aspect-ratio:16/10;}
+  .schools{grid-template-columns:1fr;}
+  .feat-grid{grid-template-columns:1fr 1fr;}
+  .learn-grid{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:768px){
+  nav.pc,.hcta{display:none;}
+  .burger{display:block;}
+  section.blk{padding:48px 0;}
+  .logo-img{height:28px;max-width:145px;}
+  .logo-caption{font-size:10px;}
+}
+@media(max-width:480px){
+  .feat-grid{grid-template-columns:1fr;}
+  .hero-cta .btn,.cta-final .actions .btn{width:100%;}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "パソコン教室ピア",
+  "url": "https://pier-pc.com/",
+  "logo": "https://pier-pc.com/kokubunji/images/logo-pier.png",
+  "description": "Excel・Word・PowerPointを初心者にもわかりやすく学べる地域密着の個別指導パソコン教室。国分寺教室・八王子教室を運営し、再就職・資格取得・資料作成をサポートします。",
+  "hasPart": [
+    {
+      "@type": "LocalBusiness",
+      "name": "パソコン教室ピア 国分寺教室",
+      "url": "https://pier-pc.com/kokubunji/",
+      "telephone": "042-313-8428",
+      "address": {
+        "@type": "PostalAddress",
+        "postalCode": "185-0012",
+        "addressRegion": "東京都",
+        "addressLocality": "国分寺市",
+        "streetAddress": "本町2丁目2-10 赤尾ビル3F",
+        "addressCountry": "JP"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "name": "パソコン教室ピア 八王子教室",
+      "url": "https://pierschoolsp.hp.peraichi.com/",
+      "telephone": "042-686-0250",
+      "address": {
+        "@type": "PostalAddress",
+        "postalCode": "192-0084",
+        "addressRegion": "東京都",
+        "addressLocality": "八王子市",
+        "streetAddress": "三崎町5-16 ファモス八王子地下1階",
+        "addressCountry": "JP"
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) / 本番ID（GTM-THBK68D）設定済み -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-THBK68D"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- header -->
+<header>
+  <div class="wrap hbar">
+    <a href="/" class="logo-img-link" aria-label="パソコン教室ピア トップへ">
+      <span class="logo-stack">
+        <img src="kokubunji/images/logo-pier.png" alt="パソコン教室ピア" class="logo-img" onerror="this.style.display='none'">
+        <span class="logo-caption">パソコン教室ピア</span>
+      </span>
+    </a>
+    <nav class="pc">
+      <a href="#schools">教室一覧</a>
+      <a href="#features">特徴</a>
+      <a href="#learn">学べること</a>
+      <a href="#first">はじめての方へ</a>
+      <a href="#faq">よくある質問</a>
+    </nav>
+    <a href="#schools" class="hcta">教室を選んで無料体験</a>
+    <button class="burger" onclick="toggleNav()" aria-label="メニュー"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mnav" id="mnav">
+    <a href="#schools" onclick="toggleNav()">教室一覧</a>
+    <a href="#features" onclick="toggleNav()">特徴</a>
+    <a href="#learn" onclick="toggleNav()">学べること</a>
+    <a href="#first" onclick="toggleNav()">はじめての方へ</a>
+    <a href="#faq" onclick="toggleNav()">よくある質問</a>
+    <a href="#schools" onclick="toggleNav()">教室を選んで無料体験</a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-text">
+      <span class="eyebrow">初心者歓迎 × 個別指導</span>
+      <h1>初心者にやさしい、<br><span class="mk">地域密着</span>のパソコン教室</h1>
+      <p class="lead">パソコン教室ピアは、Excel・Word・PowerPointなどを基礎から学べる個別指導のパソコン教室です。お仕事・再就職・資格取得・地域活動の資料作成まで、一人ひとりの目的に合わせてサポートします。</p>
+      <div class="hero-badges">
+        <span>初心者歓迎</span>
+        <span>個別指導</span>
+        <span>Excel・Word対応</span>
+        <span>MOS資格対策</span>
+        <span>再就職サポート</span>
+      </div>
+      <div class="hero-cta">
+        <a href="/kokubunji/" class="btn btn-s">国分寺教室を見る</a>
+        <a href="https://pierschoolsp.hp.peraichi.com/" target="_blank" rel="noopener" class="btn btn-s">八王子教室を見る</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="kokubunji/images/kv-lesson.jpg" alt="パソコン教室ピアの個別指導の様子" onerror="this.style.display='none'">
+    </div>
+  </div>
+</section>
+
+<!-- 教室一覧 -->
+<section class="blk deco-soft" id="schools">
+  <div class="wrap">
+    <div class="ey">
+      <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.4"/></svg></span>
+      <span class="tag">Schools</span>
+      <h2>教室一覧</h2>
+      <p>お近くの教室をお選びください。各教室で、初心者の方にも分かりやすい個別指導を行っています。無料体験レッスンは、国分寺教室・八王子教室のどちらでも実施しています。</p>
+    </div>
+    <div class="schools">
+      <!-- 国分寺教室 -->
+      <article class="school-card">
+        <div class="school-photo" data-label="パソコン教室ピア 国分寺教室">
+          <img src="kokubunji/images/kv-lesson.jpg" alt="パソコン教室ピア 国分寺教室の個別指導の様子" onerror="this.style.display='none'">
+        </div>
+        <div class="school-body">
+          <h3>パソコン教室ピア 国分寺教室</h3>
+          <p class="school-area">国分寺駅北口 徒歩2分</p>
+          <dl class="school-info">
+            <div class="row"><dt>住所</dt><dd>〒185-0012 東京都国分寺市本町2丁目2-10 赤尾ビル3F</dd></div>
+            <div class="row"><dt>電話</dt><dd><a href="tel:042-313-8428">042-313-8428</a></dd></div>
+            <div class="row"><dt>営業時間</dt><dd>10:00〜21:00</dd></div>
+            <div class="row"><dt>アクセス</dt><dd>JR国分寺駅北口から徒歩2分。北口から西友やピカソがある通りをまっすぐ進み、ピカソから3軒先にある「赤尾ビル」の3階です。</dd></div>
+          </dl>
+          <ul>
+            <li>初心者向けの個別指導、Excel・Word・MOS資格対策に対応</li>
+            <li>無料体験レッスン受付中</li>
+          </ul>
+          <div class="school-actions">
+            <a href="/kokubunji/" class="btn btn-s">国分寺教室を見る</a>
+            <a href="/kokubunji/#contact" class="btn btn-p">国分寺教室の無料体験を予約</a>
+          </div>
+        </div>
+      </article>
+      <!-- 八王子教室 -->
+      <article class="school-card">
+        <div class="school-photo" data-label="パソコン教室ピア 八王子教室">
+          <img src="images/hachioji-classroom.jpg" alt="パソコン教室ピア 八王子教室の受講スペース" onerror="this.style.display='none'">
+        </div>
+        <div class="school-body">
+          <h3>パソコン教室ピア 八王子教室</h3>
+          <p class="school-area">八王子駅 徒歩4分</p>
+          <dl class="school-info">
+            <div class="row"><dt>住所</dt><dd>〒192-0084 東京都八王子市三崎町5-16 ファモス八王子地下1階</dd></div>
+            <div class="row"><dt>電話</dt><dd><a href="tel:042-686-0250">042-686-0250</a></dd></div>
+            <div class="row"><dt>営業時間</dt><dd>10:00〜21:00</dd></div>
+            <div class="row"><dt>アクセス</dt><dd>JR八王子駅から徒歩4分。富士見通り沿いの「肉のハナマサ」「OKパーキング」ビルの地下1階です。ゴルフ練習場の並びです。</dd></div>
+          </dl>
+          <ul>
+            <li>初心者向けの個別指導、Excel・Word・MOS資格対策に対応</li>
+            <li>無料体験レッスン受付中</li>
+          </ul>
+          <div class="school-actions">
+            <a href="https://pierschoolsp.hp.peraichi.com/" target="_blank" rel="noopener" class="btn btn-s">八王子教室を見る</a>
+            <a href="https://pierschoolsp.hp.peraichi.com/" target="_blank" rel="noopener" class="btn btn-p">八王子教室の無料体験を予約</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 特徴 -->
+<section class="blk band" id="features">
+  <div class="wrap">
+    <div class="ey">
+      <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5-7-10a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 5-7 10-7 10z"/></svg></span>
+      <span class="tag">Features</span>
+      <h2>パソコン教室ピアの特徴</h2>
+    </div>
+    <div class="feat-grid">
+      <div class="feat-card">
+        <div class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/></svg></div>
+        <h3>初心者でも安心の個別指導</h3>
+        <p>一人ひとりの目的とレベルに合わせて内容をカスタマイズ。何度同じ質問をしても大丈夫な、アットホームな教室です。</p>
+      </div>
+      <div class="feat-card">
+        <div class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M8 20.5h8M12 16.5v4"/></svg></div>
+        <h3>Excel・Word・PowerPointを基礎から</h3>
+        <p>文字入力などの基本から、実務で使える操作まで。よく使う機能を中心に、無理なく身につけられます。</p>
+      </div>
+      <div class="feat-card">
+        <div class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10a2 2 0 0 1 2 2v16l-3-2-3 2-3-2-3 2V5a2 2 0 0 1 2-2z"/><path d="M9 9l2 2 4-4"/></svg></div>
+        <h3>MOS資格対策にも対応</h3>
+        <p>Excel・Word・PowerPointのMOS資格取得をサポート。試験の傾向をお伝えしながら、基礎から対策します。</p>
+      </div>
+      <div class="feat-card">
+        <div class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg></div>
+        <h3>仕事・再就職・地域活動の資料作成まで</h3>
+        <p>事務職への再就職、仕事で使う資料づくり、PTA・町内会・自治会の資料作成まで、目的に合わせて学べます。</p>
+      </div>
+      <div class="feat-card">
+        <div class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 6h10M7 10h10M12 6v3M9 13l3 5 3-5"/></svg></div>
+        <h3>通いやすい月謝制</h3>
+        <p>わかりやすい月謝制で、追加費用の心配が少ない料金設計。続けやすさにこだわっています。</p>
+      </div>
+      <div class="feat-card">
+        <div class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>土日祝日・夜間にも対応</h3>
+        <p>お仕事帰りや週末にも通いやすい時間帯に開講。ご都合に合わせて受講できます（教室により異なります）。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 学べること -->
+<section class="blk deco-soft" id="learn">
+  <div class="wrap">
+    <div class="ey">
+      <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M8 20.5h8M12 16.5v4"/></svg></span>
+      <span class="tag">What you learn</span>
+      <h2>学べること</h2>
+      <p>仕事・資格・日常まで。目的に合わせて必要な内容を選んで学べます。</p>
+    </div>
+    <div class="learn-grid">
+      <div class="learn-chip"><div class="li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 4v16M4 9h16"/></svg></div><span>Excel</span></div>
+      <div class="learn-chip"><div class="li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l3 3v15H6z"/><path d="M9 12l1.5 4 1.5-4 1.5 4 1.5-4"/></svg></div><span>Word</span></div>
+      <div class="learn-chip"><div class="li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8"/></svg></div><span>PowerPoint</span></div>
+      <div class="learn-chip"><div class="li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10a2 2 0 0 1 2 2v16l-3-2-3 2-3-2-3 2V5a2 2 0 0 1 2-2z"/><path d="M9 9l2 2 4-4"/></svg></div><span>MOS資格対策</span></div>
+      <div class="learn-chip"><div class="li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><span>パソコン基礎</span></div>
+      <div class="learn-chip"><div class="li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h11l3 3v15H5z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg></div><span>PTA・町内会・自治会資料</span></div>
+      <div class="learn-chip"><div class="li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18M8 13h2"/></svg></div><span>Canva・チラシ作成</span></div>
+      <div class="learn-chip"><div class="li"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg></div><span>仕事で使う資料作成</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- はじめての方へ -->
+<section class="blk band-blue" id="first">
+  <div class="wrap">
+    <div class="ey">
+      <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 10h.01M15.5 10h.01M8.5 14.5a4 4 0 0 0 7 0"/></svg></span>
+      <span class="tag">First time</span>
+      <h2>はじめてでも大丈夫です</h2>
+    </div>
+    <div class="first-card">
+      <p>パソコン教室ピアには、「パソコンが苦手」「何度も同じことを聞いてしまいそう」「仕事で使えるか不安」という方も多く通われています。電源の入れ方や文字入力から、Excel・Wordの実務的な使い方、資格取得まで、目的に合わせて少しずつ学べます。</p>
+      <p>パソコン教室ピアは、国分寺教室・八王子教室の2教室で、初心者の方にも分かりやすい個別指導を行っています。国分寺周辺でお探しの方は<a href="/kokubunji/" class="inline">パソコン教室ピア 国分寺教室</a>、八王子周辺でお探しの方は<a href="https://pierschoolsp.hp.peraichi.com/" target="_blank" rel="noopener" class="inline">パソコン教室ピア 八王子教室</a>をご覧ください。</p>
+      <p>国分寺教室はJR国分寺駅北口から徒歩2分、八王子教室はJR八王子駅から徒歩4分です。どちらの教室でも無料体験レッスンを実施していますので、お近くの教室へお気軽にご相談ください。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 無料体験CTA -->
+<section class="blk">
+  <div class="wrap">
+    <div class="cta-final">
+      <h2>まずは教室の雰囲気を見に来ませんか？</h2>
+      <p>パソコン教室ピアでは、国分寺教室・八王子教室のどちらでも無料体験レッスンを実施しています。現在のお悩みや学びたい内容をお伺いし、どのように学べるかをご案内します。無理な勧誘はありませんので、お近くの教室へお気軽にご相談ください。</p>
+      <div class="actions">
+        <a href="/kokubunji/#contact" class="btn btn-p">国分寺教室の無料体験を予約</a>
+        <a href="https://pierschoolsp.hp.peraichi.com/" target="_blank" rel="noopener" class="btn btn-p">八王子教室の無料体験を予約</a>
+      </div>
+      <p class="cta-note">無理な勧誘はありません。初心者の方も歓迎です。</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="blk band" id="faq">
+  <div class="wrap">
+    <div class="ey">
+      <span class="icon-badge" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.5a2.4 2.4 0 1 1 3.4 2.2c-.8.4-1 1-1 1.8"/><path d="M12 17h.01"/></svg></span>
+      <span class="tag">FAQ</span>
+      <h2>よくあるご質問</h2>
+    </div>
+    <div class="faq">
+      <div class="qa"><div class="q"><span class="qi">Q.</span><span>初心者でも大丈夫ですか？</span></div><div class="a"><span class="ai">A.</span><span>はい。電源の入れ方や文字入力など、初歩から学べます。</span></div></div>
+      <div class="qa"><div class="q"><span class="qi">Q.</span><span>Excelだけ、Wordだけでも学べますか？</span></div><div class="a"><span class="ai">A.</span><span>はい。目的に合わせて必要な内容だけ学ぶこともできます。</span></div></div>
+      <div class="qa"><div class="q"><span class="qi">Q.</span><span>MOS資格対策はできますか？</span></div><div class="a"><span class="ai">A.</span><span>はい。Excel・Word・PowerPointのMOS資格対策に対応しています。</span></div></div>
+      <div class="qa"><div class="q"><span class="qi">Q.</span><span>どの教室を選べばいいですか？</span></div><div class="a"><span class="ai">A.</span><span>通いやすい教室をお選びください。国分寺周辺の方は国分寺教室、八王子周辺の方は八王子教室をご確認ください。</span></div></div>
+      <div class="qa"><div class="q"><span class="qi">Q.</span><span>無料体験はできますか？</span></div><div class="a"><span class="ai">A.</span><span>はい。国分寺教室・八王子教室のどちらでも無料体験レッスンを受付中です。お近くの教室ページからお申し込みください。</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer>
+  <div class="wrap">
+    <div class="frow">
+      <div class="fcol">
+        <img src="kokubunji/images/logo-pier.png" alt="パソコン教室ピア" class="footer-logo-img" onerror="this.style.display='none'">
+        <p>初心者向け・個別指導の<br>地域密着パソコン教室</p>
+      </div>
+      <div class="fcol">
+        <h4>国分寺教室</h4>
+        <p>〒185-0012 東京都国分寺市本町2丁目2-10 赤尾ビル3F</p>
+        <p>TEL：042-313-8428</p>
+        <a href="/kokubunji/">国分寺教室を見る</a>
+        <a href="/kokubunji/#contact">国分寺教室の無料体験を予約</a>
+      </div>
+      <div class="fcol">
+        <h4>八王子教室</h4>
+        <p>〒192-0084 東京都八王子市三崎町5-16 ファモス八王子地下1階</p>
+        <p>TEL：042-686-0250</p>
+        <a href="https://pierschoolsp.hp.peraichi.com/" target="_blank" rel="noopener">八王子教室を見る</a>
+        <a href="https://pierschoolsp.hp.peraichi.com/" target="_blank" rel="noopener">八王子教室の無料体験を予約</a>
+      </div>
+      <div class="fcol">
+        <h4>その他</h4>
+        <a href="/kokubunji/privacy.html">プライバシーポリシー</a>
+      </div>
+    </div>
+    <div class="cr">© 2026 パソコン教室ピア</div>
+  </div>
+</footer>
+
+<script>
+function toggleNav(){var n=document.getElementById('mnav');n.style.display=n.style.display==='flex'?'none':'flex';}
+</script>
+</body>
+</html>

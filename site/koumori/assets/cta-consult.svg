@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" role="img" aria-label="相談を終えて安心した表情の住人のイラスト">
+  <rect width="800" height="340" fill="#fff3dd"/>
+  <!-- やわらかい光 -->
+  <circle cx="400" cy="150" r="190" fill="#ffe9c4" opacity="0.7"/>
+  <circle cx="400" cy="150" r="120" fill="#ffefd2" opacity="0.8"/>
+  <!-- 観葉植物 -->
+  <g>
+    <rect x="672" y="252" width="64" height="60" rx="8" fill="#c96f4a"/>
+    <path d="M704 252 q-40 -46 -18 -92 q26 30 24 92 z" fill="#4f8f6b"/>
+    <path d="M704 252 q40 -46 18 -92 q-26 30 -18 92 z" fill="#2f6f4f"/>
+    <path d="M704 252 q0 -54 0 -80" stroke="#35503f" stroke-width="5" fill="none"/>
+  </g>
+  <!-- 窓（昼・明るい） -->
+  <rect x="60" y="60" width="130" height="110" rx="10" fill="#bfe0f5"/>
+  <line x1="125" y1="60" x2="125" y2="170" stroke="#fff3dd" stroke-width="7"/>
+  <line x1="60" y1="115" x2="190" y2="115" stroke="#fff3dd" stroke-width="7"/>
+  <circle cx="96" cy="88" r="14" fill="#fffdf6" opacity="0.9"/>
+  <!-- 人物（安心の笑顔でスマホを持つ） -->
+  <g>
+    <!-- 体 -->
+    <path d="M330 340 q0 -96 76 -96 q76 0 76 96 z" fill="#e8875c"/>
+    <!-- 腕とスマホ -->
+    <rect x="356" y="264" width="24" height="58" rx="12" fill="#e8875c" transform="rotate(30 368 292)"/>
+    <rect x="430" y="264" width="24" height="58" rx="12" fill="#e8875c" transform="rotate(-30 442 292)"/>
+    <rect x="384" y="286" width="44" height="64" rx="10" fill="#3a3230"/>
+    <rect x="389" y="292" width="34" height="48" rx="5" fill="#dff0e6"/>
+    <path d="M398 316 l6 6 l12 -14" stroke="#2f6f4f" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- 頭（ボブヘア・日本人） -->
+    <circle cx="406" cy="196" r="42" fill="#f2c9a4"/>
+    <path d="M364 196 q-4 -48 42 -48 q46 0 42 48 q0 -18 -10 -26 q-6 14 -36 12 q-26 -2 -30 -14 q-8 10 -8 28 z" fill="#3a3230"/>
+    <path d="M364 194 q-6 26 8 34 q2 -18 0 -34 z" fill="#3a3230"/>
+    <path d="M448 194 q6 26 -8 34 q-2 -18 0 -34 z" fill="#3a3230"/>
+    <!-- 閉じた笑顔の目 -->
+    <path d="M384 198 q6 -7 12 0" stroke="#3a3230" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+    <path d="M416 198 q6 -7 12 0" stroke="#3a3230" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+    <path d="M396 216 q10 9 20 0" stroke="#3a3230" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+    <circle cx="380" cy="210" r="6" fill="#f7a98c" opacity="0.8"/>
+    <circle cx="432" cy="210" r="6" fill="#f7a98c" opacity="0.8"/>
+  </g>
+  <!-- 吹き出し：家＋盾 -->
+  <g>
+    <rect x="500" y="70" width="170" height="110" rx="18" fill="#fffdf6"/>
+    <polygon points="520,180 548,180 512,208" fill="#fffdf6"/>
+    <!-- 家 -->
+    <polygon points="540,118 572,92 604,118" fill="#c96f4a"/>
+    <rect x="548" y="118" width="48" height="38" rx="4" fill="#fdf6ec" stroke="#e0d0b8" stroke-width="2"/>
+    <!-- 盾＋チェック -->
+    <path d="M632 100 q16 6 26 4 q0 34 -26 46 q-26 -12 -26 -46 q10 2 26 -4 z" fill="#4f8f6b"/>
+    <path d="M622 124 l8 8 l14 -16" stroke="#fffdf6" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- きらめき -->
+  <g fill="#ffb85c">
+    <polygon points="270,90 276,104 290,110 276,116 270,130 264,116 250,110 264,104"/>
+    <polygon points="560,236 564,245 573,249 564,253 560,262 556,253 547,249 556,245"/>
+  </g>
+</svg>

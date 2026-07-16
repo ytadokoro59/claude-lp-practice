@@ -1,0 +1,38 @@
+<svg viewBox="0 0 400 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="夜の屋根裏で物音がするイメージ">
+  <defs>
+    <linearGradient id="nightBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6c81ad"/>
+      <stop offset="100%" stop-color="#37456a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="170" rx="16" fill="url(#nightBg)"/>
+
+  <!-- moon -->
+  <circle cx="335" cy="38" r="20" fill="#fdf3d3" opacity="0.9"/>
+
+  <!-- stars -->
+  <g fill="#fdf3d3">
+    <circle cx="70" cy="30" r="2"/>
+    <circle cx="110" cy="55" r="1.4"/>
+    <circle cx="260" cy="25" r="1.6"/>
+    <circle cx="40" cy="70" r="1.4"/>
+  </g>
+
+  <!-- house silhouette -->
+  <polygon points="60,135 200,60 340,135" fill="#28324c"/>
+  <rect x="90" y="135" width="220" height="28" fill="#202a45"/>
+
+  <!-- attic glow -->
+  <circle cx="200" cy="105" r="13" fill="#ffe9b8" opacity="0.85"/>
+
+  <!-- sound waves -->
+  <path d="M222 95 a22 22 0 0 1 0 30" stroke="#fdf3d3" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.85"/>
+  <path d="M232 86 a36 36 0 0 1 0 48" stroke="#fdf3d3" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- small noise marks -->
+  <g stroke="#fdf3d3" stroke-width="2.5" stroke-linecap="round" opacity="0.8">
+    <path d="M165 95 l4 5"/>
+    <path d="M172 92 l3 6"/>
+    <path d="M180 96 l4 4"/>
+  </g>
+</svg>

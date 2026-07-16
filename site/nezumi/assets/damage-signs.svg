@@ -1,0 +1,8 @@
+<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="気になるサインを確認するアイコン">
+  <polygon points="6,26 22,12 38,26" fill="#cfe3d5"/>
+  <rect x="10" y="26" width="20" height="15" fill="#eef4ee"/>
+  <rect x="16" y="30" width="6" height="6" fill="#fdf6ec"/>
+  <circle cx="33" cy="31" r="9" fill="#ffffff" stroke="#ff7a30" stroke-width="3"/>
+  <line x1="39.5" y1="37.5" x2="45" y2="43" stroke="#ff7a30" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="33" cy="31" r="2.5" fill="#ff7a30"/>
+</svg>

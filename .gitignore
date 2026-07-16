@@ -21,3 +21,13 @@ images/教室内の様子_お客様あり.jpg
 # OS
 .DS_Store
 Thumbs.db
+
+# 依存関係・ビルド生成物
+node_modules/
+.next/
+out/
+upload_public_html.zip
+
+# 独立した別リポジトリ(入れ子防止)
+bright-edge-lp/
+yakuin-com/
